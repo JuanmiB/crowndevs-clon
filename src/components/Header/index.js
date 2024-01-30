@@ -1,12 +1,15 @@
 import Navbar from '../Nabvar/Navbar'
 import { LOGO } from '../../assets/images'
+import './styles.scss'
 export default function Header () {
   return (
-    <div style={{ height: '80px', paddingInline: '20px' }}>
-        <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: '50px' }}>
-        <img src={LOGO} alt="logo" />
+    <div className="navbar">
+      <div>
+        <div className='navbar_container'>
+        <img src={LOGO} alt="logo" className='navbar_logo' />
         <Navbar />
-        </header>
+        </div>
+      </div>
     </div>
   )
 }

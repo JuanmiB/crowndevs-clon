@@ -4,7 +4,7 @@ import './index.scss'
 const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (
-        <div className="navbar">
+        <div className="">
             <div className={`nav_items ${isOpen && 'open'}`}>
                 <a href="#"> INICIO</a>
                 <a href="#"> BIO</a>

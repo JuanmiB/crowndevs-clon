@@ -16,7 +16,18 @@ body {
   width: 100%;
   overflow: hidden;
   position: absolute;
-  top: 80;
+  top: 80px;
+
+  &_container {
+    max-width: 1366px;
+    padding: 0px 20px;
+
+    @include breakpoint("medium") {
+      padding: 0px 40px;
+      width: calc(100% - 80px);
+      margin: auto;
+    }
+  }
 
   &_bgImgContainer {
     position: absolute;
@@ -48,60 +59,114 @@ body {
   }
 
   &_appSeccion {
-    max-width: 1366px;
-    padding: 0px 20px;
-
-    @include breakpoint("medium") {
-      padding: 0px 40px;
-      width: calc(100% - 80px);
-      margin: auto;
-    }
-
+    position: relative;
   }
 
   &_firstSeccion {
     position: relative;
-  }
 
-  //---------DIVIDER--------------
-  .divider {
-    background: wheat;
-  }
+    &_content {
 
-  .div_flat {
-    height: 1px;
-    opacity: .3;
-    width: 100%;
-  }
+      &_title {
+        width: 320px;
 
-  .div_rectum {
-    height: 84px;
-    left: 50%;
-    opacity: .3;
-    position: absolute;
-    top: 2px;
-    transform: translateX(-50%);
-    width: 1px;
-  }
+        h1 {
+          font-family: Nunito, sans-serif;
+          font-weight: 700;
 
-  //---------SECCION CARDS METODOLOGY--------------
-  .seccionMethodology {
-    color: #ffffff;
-    width: calc(100% - 25px);
-    margin-top: 50px;
-    backdrop-filter: blur(10px);
-    padding: 30px 10px 20px 15px;
-    border: 0px solid #ffffff;
-    border-radius: 12px;
-    background-color: rgba(27, 16, 71, 0.4);
-    position: relative;
-  }
+          @include breakpoint("medium") {
+            font-size: 72px;
+            line-height: 81px;
+          }
+        }
+      }
 
+      &_description {
+        margin-bottom: 35px;
+        margin-top: 10px;
+        width: 286px;
 
-  @include breakpoint("medium-large") {
-    .cardContainer {
-      display: flex;
-      justify-content: space-around;
+        @include breakpoint("medium") {
+          margin-left: 70px;
+          margin-top: 20px;
+          width: 370px;
+          margin-right: auto
+        }
+        p {
+          color: #fff;
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+
+      &_button {
+
+        @include breakpoint("medium") {
+          margin-left: 70px;
+          margin-right: auto
+        }
+      }
     }
   }
+
+}
+//---------DIVIDER--------------
+.divider {
+  background: wheat;
+  margin-bottom: 20px;
+
+  @include breakpoint("medium") {
+    margin-bottom: 60px;
+  }
+
+  @include breakpoint("large") {
+    margin-bottom: 10px;
+  }
+}
+
+.div_flat {
+  height: 1px;
+  opacity: .3;
+  width: 100%;
+}
+
+.div_rectum {
+  height: 84px;
+  left: 50%;
+  opacity: .3;
+  position: absolute;
+  top: 2px;
+  transform: translateX(-50%);
+  width: 1px;
+}
+
+//---------SECCION CARDS METODOLOGY--------------
+.seccionMethodology {
+  color: #ffffff;
+  width: calc(100% - 25px);
+  margin-top: 50px;
+  backdrop-filter: blur(10px);
+  padding: 30px 10px 20px 15px;
+  border: 0px solid #ffffff;
+  border-radius: 12px;
+  background-color: rgba(27, 16, 71, 0.4);
+  position: relative;
+}
+
+
+@include breakpoint("medium-large") {
+  .cardContainer {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+//------------SECCION PROYECTOS----------------
+.projectsContainer {
+  display: flex;
+  // overflow-y: hidden; // uncomment on slider created
+  position: relative;
+  width: 100%;
+  transition: all ease-in-out 0.5s;
+
 }
