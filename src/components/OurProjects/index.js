@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react'
 import OurProjectsCards from './Card/Card'
 import { projects } from '../../utils/constants'
 import './styles.css'
@@ -7,18 +6,8 @@ import ArrowsContainer from './Head/index.jsx'
 import useCarousel from '../../hooks/useCarousel.jsx'
 
 const OurProjects = () => {
-  const [width, setWidth] = useState(window.innerWidth)
+  const width = window.innerWidth
   const { counter, slide, containerElement: projectElements } = useCarousel(0, projects, width > 1280 ? 480 : 320)
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWidth(window.innerWidth)
-    }
-    window.addEventListener('resize', handleResize)
-    return () => {
-      window.removeEventListener('resize', handleResize)
-    }
-  }, [])
 
   return (
     <section style={{ color: '#fff', marginTop: '55px' }}>
