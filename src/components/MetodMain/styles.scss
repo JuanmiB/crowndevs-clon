@@ -1,0 +1,21 @@
+@import "../../global/_mixins.scss";
+.seccionMethodology {
+    color: #ffffff;
+    width: calc(100% - 25px);
+    margin-top: 50px;
+    backdrop-filter: blur(10px);
+    padding: 30px 10px 20px 15px;
+    border: 0px solid #ffffff;
+    border-radius: 12px;
+    background-color: rgba(27, 16, 71, 0.4);
+    position: relative;
+  }
+  
+  
+  @include breakpoint("medium-large") {
+    .cardContainer {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  

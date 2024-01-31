@@ -1,0 +1,27 @@
+@import "../../../global/mixins";
+
+.our-team-cards {
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    // background-color: #1b104799;
+    width: 230px;
+    height: 290px;
+    margin: 35px 20px 20px 0px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__role {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}

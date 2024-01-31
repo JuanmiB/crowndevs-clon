@@ -1,0 +1,30 @@
+@import "../../global/mixins";
+
+.bgImgContainer {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    &_box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+
+        &_card {
+            grid-column: 2/2;
+            position: relative;
+            margin-right: -80%;
+
+            @include breakpoint("medium") {
+                margin-right: -20%;
+                margin-left: 20%;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+}

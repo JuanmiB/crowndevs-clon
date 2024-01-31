@@ -1,0 +1,21 @@
+.container-arrows {
+      display: flex;
+      // overflow-y: hidden; // uncomment on slider created
+      position: relative;
+      width: 100%;
+      transition: all ease-in-out 0.5s;
+
+      
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+  
+      &_arrow {
+        cursor: pointer;
+      }
+  
+  }
+  
+  
+  

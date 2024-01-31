@@ -11,7 +11,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .main {
   width: 100%;
   overflow: hidden;
@@ -28,87 +27,6 @@ body {
       margin: auto;
     }
   }
-
-  &_bgImgContainer {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-
-    &_box {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      width: 100%;
-
-      &_card {
-        grid-column: 2/2;
-        position: relative;
-        margin-right: -80%;
-
-        @include breakpoint("medium") {
-          margin-right: -20%;
-          margin-left: 20%;
-        }
-
-        img {
-          width: 100%;
-        }
-      }
-    }
-
-  }
-
-  &_appSeccion {
-    position: relative;
-  }
-
-  &_firstSeccion {
-    position: relative;
-
-    &_content {
-
-      &_title {
-        width: 320px;
-
-        h1 {
-          font-family: Nunito, sans-serif;
-          font-weight: 700;
-
-          @include breakpoint("medium") {
-            font-size: 72px;
-            line-height: 81px;
-          }
-        }
-      }
-
-      &_description {
-        margin-bottom: 35px;
-        margin-top: 10px;
-        width: 286px;
-
-        @include breakpoint("medium") {
-          margin-left: 70px;
-          margin-top: 20px;
-          width: 370px;
-          margin-right: auto
-        }
-        p {
-          color: #fff;
-          font-size: 14px;
-          line-height: 16px;
-        }
-      }
-
-      &_button {
-
-        @include breakpoint("medium") {
-          margin-left: 70px;
-          margin-right: auto
-        }
-      }
-    }
-  }
-
 }
 //---------DIVIDER--------------
 .divider {
@@ -140,33 +58,3 @@ body {
   width: 1px;
 }
 
-//---------SECCION CARDS METODOLOGY--------------
-.seccionMethodology {
-  color: #ffffff;
-  width: calc(100% - 25px);
-  margin-top: 50px;
-  backdrop-filter: blur(10px);
-  padding: 30px 10px 20px 15px;
-  border: 0px solid #ffffff;
-  border-radius: 12px;
-  background-color: rgba(27, 16, 71, 0.4);
-  position: relative;
-}
-
-
-@include breakpoint("medium-large") {
-  .cardContainer {
-    display: flex;
-    justify-content: space-around;
-  }
-}
-
-//------------SECCION PROYECTOS----------------
-.projectsContainer {
-  display: flex;
-  // overflow-y: hidden; // uncomment on slider created
-  position: relative;
-  width: 100%;
-  transition: all ease-in-out 0.5s;
-
-}

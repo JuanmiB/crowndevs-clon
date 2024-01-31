@@ -1,0 +1,53 @@
+@import "../../global/mixins";
+
+.appSeccion {
+    position: relative;
+}
+
+.firstSeccion {
+    position: relative;
+
+    &_content {
+
+        &_title {
+            width: 320px;
+
+            h1 {
+                font-family: Nunito, sans-serif;
+                font-weight: 700;
+
+                @include breakpoint("medium") {
+                    font-size: 72px;
+                    line-height: 81px;
+                }
+            }
+        }
+
+        &_description {
+            margin-bottom: 35px;
+            margin-top: 10px;
+            width: 286px;
+
+            @include breakpoint("medium") {
+                margin-left: 70px;
+                margin-top: 20px;
+                width: 370px;
+                margin-right: auto
+            }
+
+            p {
+                color: #fff;
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+
+        &_button {
+
+            @include breakpoint("medium") {
+                margin-left: 70px;
+                margin-right: auto
+            }
+        }
+    }
+}

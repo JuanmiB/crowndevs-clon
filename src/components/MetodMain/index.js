@@ -1,5 +1,6 @@
 import { INFO_CARD } from '../../assets/images'
 import Card from '../Card/index'
+import './styles.scss'
 export default function MetodMain () {
   return (
         <section className='seccionMethodology'>

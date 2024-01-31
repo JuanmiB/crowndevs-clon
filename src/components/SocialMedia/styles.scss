@@ -1,0 +1,30 @@
+@import "../../global/mixins";
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  &__rights-text {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    margin: 40px 0px 50px 0px;
+  }
+
+  &__icons {
+    color: white;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 2px transparent);
+    transition: all 0.5s;
+
+    &:hover {
+      filter: drop-shadow(2px 2px 2px #ffffff);
+    }
+  }
+}
