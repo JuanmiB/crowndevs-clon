@@ -5,7 +5,7 @@ const OurProjectsCards = ({ title }) => {
     <>
       <div className="card_container">
         <div className="card_background">
-          <span className="card_title">{title}</span>
+          <h4 className="card_title">{title}</h4>
         </div>
       </div>
     </>

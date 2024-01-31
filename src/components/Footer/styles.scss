@@ -39,7 +39,7 @@
     background-color: rgba(27, 16, 71, 0.4);
     max-width: 800px;
 
-    span {
+    label {
       font-size: 20px;
       font-weight: 700;
     }
@@ -90,3 +90,18 @@
     }
   }
 }
+ .btnForm{
+    background-color: #1B1047;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+      background-color: #fff;
+      color: #1B1047;
+    }
+ }

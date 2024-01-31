@@ -1,0 +1,14 @@
+.containerContent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerArrow{
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+  
+  

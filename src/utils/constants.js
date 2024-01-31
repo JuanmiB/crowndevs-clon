@@ -23,6 +23,30 @@ export const teamMembers = [
     role: 'JUNIOR FRONTEND DEV',
     img: Miki
 
+  },
+  {
+    name: 'MIKI JAM',
+    role: 'JUNIOR FRONTEND DEV',
+    img: Miki
+
+  },
+  {
+    name: 'MIKI JAM',
+    role: 'JUNIOR FRONTEND DEV',
+    img: Miki
+
+  },
+  {
+    name: 'MIKI JAM',
+    role: 'JUNIOR FRONTEND DEV',
+    img: Miki
+
+  },
+  {
+    name: 'MIKI JAM',
+    role: 'JUNIOR FRONTEND DEV',
+    img: Miki
+
   }
 ]
 
@@ -35,6 +59,18 @@ export const projects = [
   },
   {
     title: 'PROYECTO 03'
+  },
+  {
+    title: 'PROYECTO 04'
+  },
+  {
+    title: 'PROYECTO 04'
+  },
+  {
+    title: 'PROYECTO 04'
+  },
+  {
+    title: 'PROYECTO 04'
   },
   {
     title: 'PROYECTO 04'

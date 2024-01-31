@@ -1,11 +1,12 @@
 import Button from '../Button/index'
+import Divider from '../Divider'
 import './Styles.scss'
 export default function HeadMain () {
   return (
     <div className='appSeccion'>
       <div className='firstSeccion'>
-        <div className='divider div_flat'></div>
-        <div className='divider div_rectum'></div>
+        <Divider className={'div_flat'} />
+        <Divider className={'div_rectum'} />
         <div className='firstSeccion_content'>
           <div className='firstSeccion_content_title'>
             <h1>Human Centralice Technologies</h1>

@@ -49,12 +49,21 @@ body {
 }
 
 .div_rectum {
+  width: 1px;
   height: 84px;
-  left: 50%;
-  opacity: .3;
+  background-color: #e1dbeb;
+  opacity: 0.3;
   position: absolute;
   top: 2px;
+  left: 50%;
   transform: translateX(-50%);
-  width: 1px;
+
+  @include breakpoint("medium") {
+    height: 50%;
+  }
+
+  @include breakpoint("medium-large") {
+    height: 100%;
+  }
 }
 
